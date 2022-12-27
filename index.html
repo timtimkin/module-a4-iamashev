@@ -156,10 +156,10 @@
 				<p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
-			<div class="subscribe__form" action="" method="GET">
-				<div class="subscribe__input">Email Address...</div>
-				<a class="subscribe__button">Subscribe</a>
-			</div>
+			<form class="subscribe__form" action="" method="GET">
+				<input class="subscribe__input" type="email" name="email" placeholder="Email Address..." required>
+				<button class="subscribe__button" type="submit">Subscribe</button>
+				</form>
 		</section>
 		<div class="feedback-contacts">
 			<div class="feedback__left-box"></div>	
@@ -170,13 +170,13 @@
 					tempor incididunt ut labore et dolore magna aliqua.</p>
 					<hr class="header__line feedback__line">
 				</section>
-				<section class="feedback__body">
-					<div class="feedback__form">
-						<div class="feedback__input feedback__name">Name</div>
-						<div class="feedback__input feedback__mail">Your Mail</div>
-						<div class="feedback__input feedback__message">Type your message</div>
-						<a class="feedback__button">Send message</a>
-					</div>
+				<section class="feedback__body section">
+					<form class="feedback__form" action="" method="GET">
+						<input class="feedback__input feedback__name" type="text" name="name" placeholder="Name" required>
+						<input class="feedback__input feedback__mail" type="email" name="email" placeholder="Your Mail" required>
+						<textarea class="feedback__input feedback__message" name="message" cols="30" rows="5" placeholder="Type your message" required></textarea>
+						<button class="feedback__button" type="submit">Send message</button>
+					</form>
 				</section>
 			</section>
 			<section class="contacts">
